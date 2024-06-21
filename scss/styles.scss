@@ -1,0 +1,151 @@
+@import "variables";
+
+body {
+  background-image: $colo-fondo;
+}
+
+header {
+  img {
+    width: 50px;
+    height: 44px;
+  }
+}
+
+.mi-estilo {
+  display: flex;
+  justify-content: end;
+
+  img {
+    width: 200px;
+    height: 80px;
+  }
+}
+
+.mi-card {
+  display: flex;
+  align-items: center;
+  width: 18rem !important;
+  padding: 5px;
+  gap: 5px;
+
+  img {
+    border-radius: 15px;
+    width: 160px;
+    height: 180px;
+  }
+}
+
+.enlaces {
+  background-color: #db7d32;
+  color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all;
+  transition-duration: 0.5s;
+
+  &:hover {
+    background-color: white;
+    color: #db7d32;
+    border: 2px solid #4f646f;
+  }
+}
+
+.mi-carousel {
+  width: 400px;
+  height: 450px;
+  padding: 10px;
+
+  text-align: center;
+
+  img {
+    width: 400px;
+    height: 450px;
+  }
+}
+
+.animacion1 {
+  display: block;
+  transition: all;
+  transition-duration: 2s;
+  filter: grayscale(100%);
+  background-image: none !important;
+
+  &:hover {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+  }
+}
+
+.mi-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+.mi-body {
+  background-image: $naruto-render-fondo, $colo-fondo !important;
+  background-size: contain;
+  background-position: left, top;
+  background-repeat: no-repeat;
+}
+
+.mi-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #db7d32;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: white;
+      color: #db7d32;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 3rem;
+
+  img {
+    width: 30px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mi-estilo {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .mi-body {
+    background-image: linear-gradient(225deg, #daccc7, #db7d32) !important;
+  }
+
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
